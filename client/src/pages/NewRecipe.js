@@ -44,7 +44,7 @@ function NewRecipe({ user }) {
       }
     });
   }
-
+  console.log(errors)
   return (
     <Wrapper>
       <WrapperChild>
@@ -86,6 +86,13 @@ function NewRecipe({ user }) {
             {errors.map((err) => (
               <Error key={err}>{err}</Error>
             ))}
+             {/* {errors.length > 0 && (
+        <ul style={{ color: "red" }}>
+          {errors.map((error) => (
+            <li key={error}>{error}</li>
+          ))}
+        </ul>
+        )} */}
           </FormField>
         </form>
       </WrapperChild>

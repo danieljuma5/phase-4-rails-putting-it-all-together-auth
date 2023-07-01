@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 function Error({ children }) {
+  console.log({children})
   return (
     <Wrapper>
       <Alert>!</Alert>
